@@ -3,7 +3,7 @@
 **Тема:** Аналіз та обробка зображень за допомогою класичних методів фільтрації, сегментації та аналізу текстур  
 **Виконавець:** Кривенко Андрій (`andrcry`, `andriikrivenko@gmail.com`)  
 **Формат виконання:** Індивідуальний  
-**Репозиторій (локальний Git):** `CGV_STEM_Project` (гілки `main`, `feature/pipelines`, `feature/tests-and-report`)
+**Репозиторій (GitHub):** [https://github.com/andrcry/CGV_STEM_Project](https://github.com/andrcry/CGV_STEM_Project) (гілки `main`, `feature/pipelines`, `feature/tests-and-report`)
 
 ---
 
