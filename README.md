@@ -56,4 +56,16 @@ python main.py --pipeline 2 --threshold-method global --threshold 127
 
 # Запуск модульних автотестів
 python -m unittest discover -s tests -v
+
+# Перевірка якості коду статичним аналізатором (опціонально, потребує pylint)
+python -m pylint src/ tests/ main.py
 ```
+
+## Результати роботи
+
+Після виконання `python main.py` у папці `outputs/` формуються:
+- `outputs/pipeline_1/<image>/` — проміжні та фінальні зображення стадій Пайплайна 1 (`stage1_gray.png`, `stage2_noisy.png`, `stage3_filtered.png`, `stage4_texture_lbp.png`);
+- `outputs/pipeline_2/<image>/` — проміжні та фінальні зображення стадій Пайплайна 2 (`stage1_gray.png`, `stage2_segmented.png`, `stage3_sobel.png`);
+- `outputs/metrics_log.json` та `outputs/metrics_summary.csv` — попіксельні метрики `MSE`, `PSNR`, `SSIM`, характеристики текстур `GLCM` і зведені таблиці по групах;
+- `outputs/charts/` — графіки порівняння фільтрів (`ablation_psnr_ssim.png`, `pipeline2_edge_density.png`) та колажі стадій (`visual_stages_pipeline1.png`, `visual_stages_pipeline2.png`).
+
