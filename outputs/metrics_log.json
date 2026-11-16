@@ -33,28 +33,46 @@
       }
     }
   },
-  "processed_count": 30,
+  "processed_count": 31,
   "skipped_files": [],
   "summary": {
     "overall": {
-      "count": 30,
+      "count": 31,
       "pipeline_1_avg": {
-        "noisy_psnr": 17.8307,
-        "filtered_psnr": 27.4817,
-        "filtered_ssim": 0.8467,
-        "psnr_gain": 9.651,
-        "glcm_contrast_gray": 3.028,
-        "glcm_contrast_filtered": 1.3148
+        "noisy_psnr": 17.8139,
+        "filtered_psnr": 27.4999,
+        "filtered_ssim": 0.8489,
+        "psnr_gain": 9.6859,
+        "glcm_contrast_gray": 2.9652,
+        "glcm_contrast_filtered": 1.2903
       },
       "pipeline_2_avg": {
-        "used_threshold": 132.47,
-        "foreground_ratio_pct": 57.69,
-        "edge_density_segmented_pct": 25.49,
-        "edge_density_raw_gray_pct": 53.27,
-        "segmented_ssim": 0.4562
+        "used_threshold": 131.42,
+        "foreground_ratio_pct": 56.19,
+        "edge_density_segmented_pct": 25.04,
+        "edge_density_raw_gray_pct": 53.05,
+        "segmented_ssim": 0.4462
       }
     },
     "by_group": {
+      "custom": {
+        "count": 1,
+        "pipeline_1_avg": {
+          "noisy_psnr": 17.3104,
+          "filtered_psnr": 28.0458,
+          "filtered_ssim": 0.9136,
+          "psnr_gain": 10.7354,
+          "glcm_contrast_gray": 1.0826,
+          "glcm_contrast_filtered": 0.554
+        },
+        "pipeline_2_avg": {
+          "used_threshold": 100.0,
+          "foreground_ratio_pct": 11.3,
+          "edge_density_segmented_pct": 11.63,
+          "edge_density_raw_gray_pct": 46.71,
+          "segmented_ssim": 0.1476
+        }
+      },
       "natural_texture": {
         "count": 10,
         "pipeline_1_avg": {
@@ -114,141 +132,141 @@
   "ablation_summary": {
     "sp_0.05": {
       "noisy": {
-        "mse": 1093.61,
-        "psnr": 17.83,
-        "ssim": 0.5031,
-        "glcm_contrast": 10.4007
+        "mse": 1097.29,
+        "psnr": 17.81,
+        "ssim": 0.5004,
+        "glcm_contrast": 10.3731
       },
       "gaussian_3x3": {
-        "mse": 408.72,
-        "psnr": 23.31,
-        "ssim": 0.6354,
-        "glcm_contrast": 1.0407
+        "mse": 404.31,
+        "psnr": 23.32,
+        "ssim": 0.6338,
+        "glcm_contrast": 1.0302
       },
       "gaussian_5x5": {
-        "mse": 509.4,
-        "psnr": 23.17,
+        "mse": 502.08,
+        "psnr": 23.19,
         "ssim": 0.638,
-        "glcm_contrast": 0.5012
+        "glcm_contrast": 0.4955
       },
       "median_3x3": {
-        "mse": 330.44,
-        "psnr": 27.48,
-        "ssim": 0.8467,
-        "glcm_contrast": 1.3148
+        "mse": 323.07,
+        "psnr": 27.5,
+        "ssim": 0.8489,
+        "glcm_contrast": 1.2903
       },
       "median_5x5": {
-        "mse": 602.84,
+        "mse": 590.4,
         "psnr": 24.62,
-        "ssim": 0.7143,
-        "glcm_contrast": 0.738
+        "ssim": 0.7174,
+        "glcm_contrast": 0.7242
       }
     },
     "sp_0.15": {
       "noisy": {
-        "mse": 3321.89,
-        "psnr": 13.01,
-        "ssim": 0.2562,
-        "glcm_contrast": 24.515
+        "mse": 3331.28,
+        "psnr": 12.99,
+        "ssim": 0.2535,
+        "glcm_contrast": 24.5452
       },
       "gaussian_3x3": {
-        "mse": 812.69,
+        "mse": 809.9,
         "psnr": 19.66,
-        "ssim": 0.4442,
-        "glcm_contrast": 1.5389
+        "ssim": 0.4413,
+        "glcm_contrast": 1.5331
       },
       "gaussian_5x5": {
-        "mse": 765.55,
+        "mse": 759.39,
         "psnr": 20.54,
-        "ssim": 0.4921,
-        "glcm_contrast": 0.5968
+        "ssim": 0.4905,
+        "glcm_contrast": 0.5924
       },
       "median_3x3": {
-        "mse": 400.71,
-        "psnr": 25.74,
-        "ssim": 0.8233,
-        "glcm_contrast": 1.5502
+        "mse": 392.63,
+        "psnr": 25.76,
+        "ssim": 0.8254,
+        "glcm_contrast": 1.5234
       },
       "median_5x5": {
-        "mse": 627.76,
-        "psnr": 24.11,
-        "ssim": 0.7076,
-        "glcm_contrast": 0.82
+        "mse": 615.15,
+        "psnr": 24.12,
+        "ssim": 0.7106,
+        "glcm_contrast": 0.8049
       }
     },
     "gauss_15": {
       "noisy": {
-        "mse": 198.03,
+        "mse": 198.3,
         "psnr": 25.25,
-        "ssim": 0.6561,
-        "glcm_contrast": 4.3507
+        "ssim": 0.6524,
+        "glcm_contrast": 4.2937
       },
       "gaussian_3x3": {
-        "mse": 280.93,
-        "psnr": 26.18,
-        "ssim": 0.7857,
-        "glcm_contrast": 0.8254
+        "mse": 275.9,
+        "psnr": 26.21,
+        "ssim": 0.7859,
+        "glcm_contrast": 0.814
       },
       "gaussian_5x5": {
-        "mse": 445.96,
-        "psnr": 24.59,
-        "ssim": 0.7354,
-        "glcm_contrast": 0.443
+        "mse": 438.19,
+        "psnr": 24.6,
+        "ssim": 0.737,
+        "glcm_contrast": 0.4368
       },
       "median_3x3": {
-        "mse": 342.33,
-        "psnr": 25.67,
-        "ssim": 0.7364,
-        "glcm_contrast": 1.2712
+        "mse": 335.69,
+        "psnr": 25.71,
+        "ssim": 0.7366,
+        "glcm_contrast": 1.2514
       },
       "median_5x5": {
-        "mse": 582.76,
-        "psnr": 24.0,
-        "ssim": 0.6678,
-        "glcm_contrast": 0.6774
+        "mse": 571.44,
+        "psnr": 24.02,
+        "ssim": 0.6699,
+        "glcm_contrast": 0.6666
       }
     },
     "gauss_30": {
       "noisy": {
-        "mse": 763.71,
+        "mse": 762.71,
         "psnr": 19.4,
-        "ssim": 0.4438,
-        "glcm_contrast": 8.1635
+        "ssim": 0.4403,
+        "glcm_contrast": 8.0996
       },
       "gaussian_3x3": {
-        "mse": 383.3,
-        "psnr": 23.68,
-        "ssim": 0.6496,
-        "glcm_contrast": 0.9791
+        "mse": 377.65,
+        "psnr": 23.72,
+        "ssim": 0.6484,
+        "glcm_contrast": 0.9674
       },
       "gaussian_5x5": {
-        "mse": 509.76,
-        "psnr": 23.35,
-        "ssim": 0.6615,
-        "glcm_contrast": 0.4849
+        "mse": 501.44,
+        "psnr": 23.38,
+        "ssim": 0.6619,
+        "glcm_contrast": 0.4789
       },
       "median_3x3": {
-        "mse": 449.04,
-        "psnr": 23.01,
-        "ssim": 0.5858,
-        "glcm_contrast": 1.4765
+        "mse": 442.8,
+        "psnr": 23.04,
+        "ssim": 0.5842,
+        "glcm_contrast": 1.4595
       },
       "median_5x5": {
-        "mse": 609.51,
-        "psnr": 22.77,
-        "ssim": 0.5879,
-        "glcm_contrast": 0.6735
+        "mse": 599.09,
+        "psnr": 22.79,
+        "ssim": 0.5885,
+        "glcm_contrast": 0.665
       }
     },
     "segmentation": {
       "global_127": {
-        "ssim_vs_gray": 0.4496,
-        "edge_density_pct": 22.17
+        "ssim_vs_gray": 0.439,
+        "edge_density_pct": 21.72
       },
       "otsu": {
-        "avg_threshold": 132.47,
-        "ssim_vs_gray": 0.4562,
-        "edge_density_pct": 25.49
+        "avg_threshold": 131.42,
+        "ssim_vs_gray": 0.4462,
+        "edge_density_pct": 25.04
       }
     }
   },
@@ -1780,6 +1798,57 @@
           "mse": 3581.9023,
           "psnr": 12.5897,
           "ssim": 0.4224
+        }
+      }
+    },
+    {
+      "image": "31_car.png",
+      "group": "custom",
+      "pipeline_1": {
+        "noisy_vs_gray": {
+          "mse": 1207.9369,
+          "psnr": 17.3104,
+          "ssim": 0.4185
+        },
+        "filtered_vs_gray": {
+          "mse": 101.9774,
+          "psnr": 28.0458,
+          "ssim": 0.9136,
+          "psnr_gain": 10.7354
+        },
+        "texture_gray": {
+          "mean": 53.4734,
+          "variance": 2224.6825,
+          "std": 47.1665,
+          "entropy": 7.066,
+          "glcm_contrast": 1.0826,
+          "glcm_homogeneity": 0.8528,
+          "glcm_energy": 0.0934
+        },
+        "texture_filtered": {
+          "mean": 52.9744,
+          "variance": 2064.7933,
+          "std": 45.44,
+          "entropy": 6.9998,
+          "glcm_contrast": 0.554,
+          "glcm_homogeneity": 0.9038,
+          "glcm_energy": 0.1129
+        }
+      },
+      "pipeline_2": {
+        "used_threshold": 100,
+        "foreground_ratio_pct": 11.3,
+        "edge_density_segmented_pct": 11.63,
+        "edge_density_raw_gray_pct": 46.71,
+        "segmented_vs_gray": {
+          "mse": 3124.4012,
+          "psnr": 13.1831,
+          "ssim": 0.1476
+        },
+        "sobel_vs_raw_sobel": {
+          "mse": 4851.7719,
+          "psnr": 11.2718,
+          "ssim": 0.1942
         }
       }
     }
